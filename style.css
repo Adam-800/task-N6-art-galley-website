@@ -67,3 +67,98 @@ background: rgba(213, 150, 108, 1);
 .click-div {
     display: flex;
 }
+
+.grid-1 {
+height: 320px;
+width: 343px;
+padding:120px 0px 25px 0px;
+
+
+}
+
+.your-day {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
+.day-h1 {
+height: 90px;
+width: 343px;
+font-family: Big Shoulders Display;
+font-size: 50px;
+font-weight: 900;
+line-height: 45px;
+letter-spacing: 0px;
+text-align: left;
+color: rgba(21, 21, 21, 1);
+
+
+}
+
+.day-p {
+height: 112px;
+width: 343px;
+font-family: Outfit;
+font-size: 18px;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+color:  rgba(68, 68, 68, 1);
+
+}
+
+.two-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.come {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 293px;
+  width: 343px;
+  background: rgba(21, 21, 21, 1);
+  padding-top: 16px;
+  gap
+
+}
+
+.come-h1 {
+  height: 90px;
+  width: 295px;
+  font-family: Big Shoulders Display;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: left; 
+  color: rgba(255, 255, 255, 1);
+  padding: 48px 24px 24px 24px;
+}
+
+.come-p {
+  height: 84px;
+  width: 295px;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color:rgba(255, 255, 255, 1);
+  padding: 24px 24px 48px 24px;
+  
+
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
