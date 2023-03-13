@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color:#F2F2F2;
+  max-width: 100%;
 }
 
 .modern {
@@ -8,8 +13,6 @@ body {
     gap:32px;
     padding: 32px 16px 120px 16px;
 }
-
-
 
 .modern-h1 {
 font-family: Big Shoulders Display;
@@ -33,8 +36,35 @@ font-weight: 300;
 line-height: 28px;
 letter-spacing: 0px;
 text-align: left;
+}
 
+.link {
+  text-decoration: none;
 
+}
+
+.tablet-photo {
+  display: none;
+}
+
+.tablet-photo-grid {
+  display: none;
+}
+
+.desktop-photo {
+  display: none;
+}
+
+.desktop-photo-grid1 {
+  display: none;
+}
+
+.desktop-photo-grid2 {
+  display: none;
+}
+
+.desktop-photo-grid3 {
+  display: none;
 }
 
 .modern-button {
@@ -51,7 +81,6 @@ line-height: 24px;
 letter-spacing: 3.6363637447357178px;
 color: rgba(255, 255, 255, 1);
 
-
 }
 
 .modern-button1 {
@@ -66,6 +95,7 @@ background: rgba(213, 150, 108, 1);
 
 .click-div {
     display: flex;
+    padding-top: 32px;
 }
 
 .grid-1 {
@@ -73,7 +103,10 @@ height: 320px;
 width: 343px;
 padding:120px 0px 25px 0px;
 
+}
 
+.black-white {
+  padding-bottom: 15px;
 }
 
 .your-day {
@@ -94,7 +127,6 @@ line-height: 45px;
 letter-spacing: 0px;
 text-align: left;
 color: rgba(21, 21, 21, 1);
-
 
 }
 
@@ -118,17 +150,16 @@ color:  rgba(68, 68, 68, 1);
   padding-bottom: 16px;
 }
 
-.come {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  height: 293px;
-  width: 343px;
-  background: rgba(21, 21, 21, 1);
-  padding-top: 16px;
-  gap
-
+  .come {
+    display: flex;
+    flex-direction: column;
+    height: 293px;
+    width: 343px;
+    background: rgba(21, 21, 21, 1);
+    padding: 48px 24px 47px 24px;
+    justify-content: space-around;
 }
+  
 
 .come-h1 {
   height: 90px;
@@ -140,7 +171,7 @@ color:  rgba(68, 68, 68, 1);
   letter-spacing: 0px;
   text-align: left; 
   color: rgba(255, 255, 255, 1);
-  padding: 48px 24px 24px 24px;
+  
 }
 
 .come-p {
@@ -152,8 +183,7 @@ color:  rgba(68, 68, 68, 1);
   line-height: 28px;
   letter-spacing: 0px;
   text-align: left;
-  color:rgba(255, 255, 255, 1);
-  padding: 24px 24px 48px 24px;
+  color:#FFFFFF;
   
 
 }
@@ -161,4 +191,320 @@ color:  rgba(68, 68, 68, 1);
 section {
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 120px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(21, 21, 21, 1);
+  height: 336px;
+  width: 375px;
+  gap: 70px;
+  padding-left: 32px;
+  
+}
+
+.footer-h1 {
+height: 40px;
+width: 110px;
+color:rgba(255, 255, 255, 1);
+padding-top: 48px;
+}
+
+.footer-p {
+height: 104px;
+width: 311px;
+top: 78px;
+font-family: Outfit;
+font-size: 16px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+color:rgba(255, 255, 255, 1);
+
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) {
+
+body {
+
+  background-image: url("./image-hero-tablet.jpg");
+  background-repeat: no-repeat;
+}
+
+.mobile-photo {
+  display: none;
+}
+
+.desktop-photo {
+  display: none;
+}
+
+.desktop-photo-grid1 {
+  display: none;
+}
+
+.desktop-photo-grid2 {
+  display: none;
+}
+
+.desktop-photo-grid3 {
+  display: none;
+}
+
+.tablet-photo {
+  display: block;
+}
+
+.tablet-photo-grid {
+  display: block;
+}
+
+
+header {
+  display: flex;
+  
+}
+
+.modern {
+  margin-left: -50px;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.part3 {
+  display: grid;
+  gap: 11px;
+
+}
+
+.grid-1-photo {
+  padding-bottom: 11px;
+}
+
+.photo-grid2 {
+  grid-area:1 / 1 / 3 / 2;
+}
+
+.photo-grid3{
+  grid-area: 1 / 2 / 2 / 3;
+  
+ 
+}
+
+.come {
+  grid-area:2 / 2 / 3 / 3;
+}
+
+.tablet-photo-grid {
+width: 330px;
+height: 335px;
+}
+
+.come {
+  height: 360px;
+  width: 330px;
+ 
+}
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  
+
+ 
+}
+
+.come-p {
+  width: 225px;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 216px;
+  width: 768px;
+  justify-content: space-between;
+  
+
+}
+
+.footer-p {
+height: 104px;
+width: 281px;
+padding-top: 56px;
+
+
+}
+
+.footer-icon {
+  padding-top: 56px;
+  padding-right: 39px;
+  
+}
+.footer-h1{
+padding: 56px 65px 120px 39px;
+
+}
+
+}
+
+/* desktop version */
+
+@media screen and (min-width: 1024px) {
+
+  .conteiner {
+  
+
+    width: 990px;
+    height: 800px;
+    position: relative;
+
+    }
+    
+
+    .text {
+      position: absolute;
+      font-size: 70px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(270deg, black 200px, white 50%);
+      top: 200px;
+      left: 280px;
+    }
+    
+    .background {
+      background-color: black;
+      background-image: url("./image-hero-desk.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 100%;
+      height: 100%;
+    }
+    
+
+    .modern-h1 {
+
+      font-family: Big Shoulders Display;
+      height: 90px;
+      width: 343px;
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 0 px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: rgb(248, 242, 242);
+    }
+
+    .black-white {
+      margin-left: -30px;
+      z-index: 20;
+      margin-top: 175px;
+    }
+
+
+  .tablet-photo {
+    display: none;
+  }
+
+  .tablet-photo-grid {
+    display: none;
+  }
+
+.desktop-photo-grid1 {
+  display: block;
+}
+
+.desktop-photo-grid2 {
+  display: block;
+}
+
+.desktop-photo-grid3 {
+  display: block;
+}
+
+
+
+section {
+  padding: 0px;
+  padding-bottom: 180px;
+  display: flex;
+  align-items: center;
+
+}
+
+.part2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 1110px;
+  max-width: 100%;
+  gap: 125px;
+}
+
+.part3 {
+  display: grid;
+  gap: 30px;
+  width: 1110px;
+  max-width: 100%;
+
+}
+
+.come {
+height: 377px;
+width: 445px;
+
+}
+
+.come-p {
+  width: 260px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 244px;
+  width: 1440px;
+  max-width: 100%;
+  justify-content: space-between;
+
+}
+
+
+.footer-p {
+  width: 430px;
+  padding-top: 80px;
+
+}
+
+.footer-icon {
+  padding-top: 80px;
+  padding-left: 80px;
+  
+}
+
+.footer-h1{
+padding: 80px 65px 106px 65px;
+
+}
+
 }
